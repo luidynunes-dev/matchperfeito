@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-sl-black: #111111;
+  --color-sl-offwhite: #F8F6F3;
+  --color-sl-nude: #D8C3B5;
+  --color-sl-beige: #C7B299;
+  --color-sl-primary: #c0e921;
+  --color-sl-white: #FFFFFF;
+}
+
+html, body {
+  @apply bg-sl-offwhite text-sl-black antialiased overflow-x-hidden;
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-sl-offwhite;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-sl-beige rounded-full;
+}
