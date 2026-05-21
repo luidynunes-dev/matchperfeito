@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, RotateCcw } from 'lucide-react';
 import { ProfileResult } from '../data';
@@ -11,7 +11,12 @@ interface Props {
 }
 
 export function ResultScreen({ result, name, onRestart }: Props) {
-  const idealModelName = result.products[0].name;
+  const selectedProduct = useMemo(() => {
+    const randomIndex = Math.floor(Math.random() * result.products.length);
+    return result.products[randomIndex];
+  }, [result]);
+
+  const idealModelName = selectedProduct.name;
   const whatsappNumber = '558192237474';
   
   const messageText = `Olá! Meu nome é ${name} e acabei de fazer o Match Perfeito by Santa Lolla ✨\n\nMeu resultado foi: ${result.title}\n\nO modelo ideal para mim é: ${idealModelName}. Gostaria de mais informações 💕`;
@@ -72,13 +77,13 @@ export function ResultScreen({ result, name, onRestart }: Props) {
           >
             <div className="w-full aspect-[4/5] overflow-hidden bg-white shadow-sm mb-6 relative">
               <img
-                src={result.products[0].imageUrl}
-                alt={result.products[0].name}
+                src={selectedProduct.imageUrl}
+                alt={selectedProduct.name}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-sl-black/0 group-hover:bg-sl-black/5 transition-colors duration-500" />
             </div>
-            <h3 className="font-serif text-2xl text-sl-black mb-3 px-4">{result.products[0].name}</h3>
+            <h3 className="font-serif text-2xl text-sl-black mb-3 px-4">{selectedProduct.name}</h3>
             <div className="h-px w-10 bg-sl-beige mx-auto" />
           </motion.div>
         </div>
