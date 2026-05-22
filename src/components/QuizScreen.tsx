@@ -12,17 +12,26 @@ interface Props {
 export function QuizScreen({ onComplete, name }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<AnswersData>({});
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const question = questions[currentIndex];
+  // Safeguard against boundary issues during unmount or fast clicks
+  if (!question) {
+    return null;
+  }
   const progress = ((currentIndex) / questions.length) * 100;
 
   const handleSelect = (optionId: string) => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+
     const newAnswers = { ...answers, [question.id]: optionId };
     setAnswers(newAnswers);
 
     setTimeout(() => {
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(c => c + 1);
+        setIsTransitioning(false);
       } else {
         onComplete(newAnswers);
       }

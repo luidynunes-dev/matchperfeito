@@ -75,11 +75,11 @@ export function ResultScreen({ result, name, onRestart }: Props) {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="group flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="w-full aspect-[4/5] overflow-hidden bg-white shadow-sm mb-6 relative">
+            <div className="w-full bg-white shadow-sm mb-6 relative p-6 flex justify-center items-center">
               <img
                 src={selectedProduct.imageUrl}
                 alt={selectedProduct.name}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full max-h-[60vh] object-contain transition-transform duration-700 group-hover:scale-105 mix-blend-multiply"
               />
               <div className="absolute inset-0 bg-sl-black/0 group-hover:bg-sl-black/5 transition-colors duration-500" />
             </div>
