@@ -32,10 +32,10 @@ export const profiles: Record<ProfileType, ProfileResult> = {
     emoji: '💋',
     description: 'Você ama moda, tendências e peças que transformam qualquer produção. Seu estilo chama atenção pelos detalhes, personalidade e atitude fashion.',
     products: [
-      { name: 'Scarpin Slingback Bico Quadrado', imageUrl: 'https://i.postimg.cc/DmXBbxGN/Scarpin-Slingback-Bico-Quadrado.jpg' },
-      { name: 'Flip Flop Verniz Vermelho Jambo Corrente', imageUrl: 'https://i.postimg.cc/23Z2B0W2/Flip-Flop-Verniz-Vermelho-Jambo-Corrente.jpg' },
-      { name: 'Bolsa Baguete Média Soft Preta', imageUrl: 'https://i.postimg.cc/p5zCbdxF/Bolsa-Baguete-Media-Soft-Preta.jpg' },
-      { name: 'Sandália Couro Confort Preta', imageUrl: 'https://i.postimg.cc/m1CjfrRM/Sandalia-Couro-Confort-Preta.jpg' }
+      { name: 'Scarpin Slingback Bico Quadrado', imageUrl: 'https://i.postimg.cc/DJBdkj8w/Scarpin-Slingback-Bico-Quadrado.png' },
+      { name: 'Flip Flop Verniz Vermelho Jambo Corrente', imageUrl: 'https://i.postimg.cc/47Jb0kNs/Flip-Flop-Verniz-Vermelho-Jambo-Corrente.png' },
+      { name: 'Bolsa Baguete Média Soft Preta', imageUrl: 'https://i.postimg.cc/bG09LNPF/Bolsa-Baguete-Media-Soft-Preta.png' },
+      { name: 'Sandália Couro Confort Preta', imageUrl: 'https://i.postimg.cc/MMdb2PvS/Sandalia-Couro-Confort-Preta.png' }
     ],
     imageUrl: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop' // bold, fashion shoes
   },
@@ -44,10 +44,10 @@ export const profiles: Record<ProfileType, ProfileResult> = {
     emoji: '🤍',
     description: 'Seu estilo é sofisticado, contemporâneo e naturalmente elegante. Você prefere peças atemporais com toque moderno e valoriza combinações refinadas.',
     products: [
-      { name: 'Scarpin Couro Soft Bico Fino', imageUrl: 'https://i.postimg.cc/3WvnDtGc/Scarpin-Couro-Soft-Bico-Fino.jpg' },
-      { name: 'Flip Flop Verniz Bege', imageUrl: 'https://i.postimg.cc/w3m0swNf/Flip-Flop-Verniz-Bege.jpg' },
-      { name: 'Rasteira Napa Soft Bege Aveia', imageUrl: 'https://i.postimg.cc/n9B2bLZm/Rasteira-Napa-Soft-Bege-Aveia.jpg' },
-      { name: 'Rasteira New Mestiço Creme', imageUrl: 'https://i.postimg.cc/bSkgcv8s/Rasteira-New-Mestico-Creme.jpg' }
+      { name: 'Scarpin Couro Soft Bico Fino', imageUrl: 'https://i.postimg.cc/tZ2tQSYq/Scarpin-Couro-Soft-Bico-Fino.png' },
+      { name: 'Flip Flop Verniz Bege', imageUrl: 'https://i.postimg.cc/bDzH5cN8/Flip-Flop-Verniz-Bege.png' },
+      { name: 'Rasteira Napa Soft Bege Aveia', imageUrl: 'https://i.postimg.cc/dkqmfPtY/Rasteira-Napa-Soft-Bege-Aveia.png' },
+      { name: 'Rasteira New Mestiço Creme', imageUrl: 'https://i.postimg.cc/0McdRWbR/Rasteira-New-Mestico-Creme.png' }
     ],
     imageUrl: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=800&auto=format&fit=crop' // elegant, minimal
   },
@@ -56,10 +56,10 @@ export const profiles: Record<ProfileType, ProfileResult> = {
     emoji: '✨',
     description: 'Você ama unir estilo e praticidade. Seu guarda-roupa é moderno, versátil e elegante sem esforço. Você gosta de peças que acompanham sua rotina com conforto, sofisticação e informação de moda.',
     products: [
-      { name: 'Tênis Floater Lux Preto', imageUrl: 'https://i.postimg.cc/5jCnFszG/Tenis-Floater-Lux-Preto.jpg' },
-      { name: 'Tênis Couro Camurça Bege Biscuit', imageUrl: 'https://i.postimg.cc/8s6trZvX/Tenis-Couro-Camurca-Bege-Biscuit.jpg' },
-      { name: 'Sandália Napa Soft Bege Palmilha Confort', imageUrl: 'https://i.postimg.cc/hQTsWGgT/Sandalia-Napa-Soft-Bege-Palmilha-Confort.jpg' },
-      { name: 'Bolsa Média Floater Estruturada Marfim', imageUrl: 'https://i.postimg.cc/7b2mTKzX/Bolsa-Media-Floater-Estruturada-Marfim.jpg' }
+      { name: 'Tênis Floater Lux Preto', imageUrl: 'https://i.postimg.cc/8JtBQKj7/Tenis-Floater-Lux-Preto.png' },
+      { name: 'Tênis Couro Camurça Bege Biscuit', imageUrl: 'https://i.postimg.cc/nj0YbRCr/Tenis-Couro-Camurca-Bege-Biscuit.png' },
+      { name: 'Sandália Napa Soft Bege Palmilha Confort', imageUrl: 'https://i.postimg.cc/Q90kG4HX/Sandalia-Napa-Soft-Bege-Palmilha-Confort.png' },
+      { name: 'Bolsa Média Floater Estruturada Marfim', imageUrl: 'https://i.postimg.cc/yJT0cQhv/Artes-Luidy-(1).png' }
     ],
     imageUrl: 'https://images.unsplash.com/photo-1608248593498-c178bea96eab?q=80&w=800&auto=format&fit=crop' // comfortable yet stylish
   }

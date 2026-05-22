@@ -19,7 +19,7 @@ export function ResultScreen({ result, name, onRestart }: Props) {
   const idealModelName = selectedProduct.name;
   const whatsappNumber = '558192237474';
   
-  const messageText = `Olá! Meu nome é ${name} e acabei de fazer o Match Perfeito by Santa Lolla ✨\n\nMeu resultado foi: ${result.title}\n\nO modelo ideal para mim é: ${idealModelName}. Gostaria de mais informações 💕`;
+  const messageText = `Olá! Meu nome é ${name} e acabei de fazer o Match Perfeito by Santa Lolla ✨\n\nMeu resultado foi: ${result.title}\n\nO modelo ideal para mim é: ${idealModelName}. Gostaria de garantir meu preço especial! 💕`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
 
   return (
@@ -75,11 +75,11 @@ export function ResultScreen({ result, name, onRestart }: Props) {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="group flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="w-full bg-white shadow-sm mb-6 relative p-6 flex justify-center items-center">
+            <div className="w-full aspect-square bg-transparent mb-6 relative p-8 flex justify-center items-center">
               <img
                 src={selectedProduct.imageUrl}
                 alt={selectedProduct.name}
-                className="w-full max-h-[60vh] object-contain transition-transform duration-700 group-hover:scale-105 mix-blend-multiply"
+                className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 mix-blend-multiply"
               />
               <div className="absolute inset-0 bg-sl-black/0 group-hover:bg-sl-black/5 transition-colors duration-500" />
             </div>
@@ -89,15 +89,20 @@ export function ResultScreen({ result, name, onRestart }: Props) {
         </div>
 
         <div className="flex flex-col items-center gap-6 max-w-sm mx-auto">
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center gap-3 bg-sl-primary text-sl-black px-8 py-5 w-full rounded-none overflow-hidden transition-all hover:bg-sl-primary/90 active:scale-95 shadow-xl"
-          >
-            <MessageCircle className="w-5 h-5 transition-transform group-hover:scale-110" />
-            <span className="font-medium tracking-wide">Falar com uma especialista</span>
-          </a>
+          <div className="w-full flex flex-col items-center gap-3">
+            <div className="inline-flex items-center justify-center gap-2 bg-sl-black text-sl-white px-5 py-2 text-xs font-semibold uppercase tracking-widest shadow-sm rounded-none w-full md:w-auto">
+              <span>✨ Garanta seu preço especial</span>
+            </div>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center justify-center gap-3 bg-sl-primary text-sl-black px-8 py-5 w-full rounded-none overflow-hidden transition-all hover:bg-sl-primary/90 active:scale-95 shadow-xl"
+            >
+              <MessageCircle className="w-5 h-5 transition-transform group-hover:scale-110" />
+              <span className="font-medium tracking-wide">Falar com a especialista</span>
+            </a>
+          </div>
           
           <button
             onClick={onRestart}
